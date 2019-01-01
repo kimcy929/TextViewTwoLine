@@ -19,7 +19,7 @@
                 style="@style/TextViewTwoTextLineTextTitleStyle"
                 android:layout_toStartOf="@+id/switchCompat" />
 
-            <android.support.v7.widget.SwitchCompat
+            <androidx.appcompat.widget.SwitchCompat
                 android:id="@+id/switchCompat"
                 style="@style/SwitchCompatStyle" />
 
@@ -36,7 +36,7 @@
                 app:textDescription="@string/support_translate_description"
                 app:textTitle="@string/support_translate" />
 
-            <android.support.v7.widget.SwitchCompat
+            <androidx.appcompat.widget.SwitchCompat
                 android:id="@+id/switchCompat1"
                 style="@style/SwitchCompatStyle" />
 
@@ -53,7 +53,7 @@
                 app:leftDrawableCompat="@drawable/ic_airplanemode_active_black_24dp"
                 app:textTitle="Airplane mode" />
 
-            <android.support.v7.widget.SwitchCompat
+            <androidx.appcompat.widget.SwitchCompat
                 android:id="@+id/switchCompatAirplane"
                 style="@style/SwitchCompatStyle" />
 

@@ -1,11 +1,6 @@
 <resources>
 
-    <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.DayNight">
-        <!-- Customize your theme here. -->
-        <item name="colorAccent">@color/colorDrawableTint</item>
 
-    </style>
 
     <style name="SettingsItemStyle">
         <item name="android:layout_width">match_parent</item>
@@ -33,18 +28,31 @@
         <item name="android:paddingTop">@dimen/item_padding</item>
         <item name="android:paddingBottom">@dimen/item_padding</item>
 
-        <item name="titleTextAppearance">@style/TextAppearance.AppCompat.Subhead</item>
+        <item name="titleTextAppearance">@style/TextAppearanceTitle</item>
+        <item name="descriptionTextAppearance">@style/TextAppearanceDescription</item>
 
-        <item name="drawablePadding">@dimen/drawable_padding</item> <!-- 24dp for center -->
-        <item name="drawableTintColor">@color/colorDrawableTint</item>
+        <item name="drawablePadding">?attr/listPreferredItemPaddingLeft</item> <!-- 24dp for center -->
+        <!--<item name="drawableTintColor">@color/colorDrawableTint</item>-->
+        <item name="drawableTintColor">?android:attr/colorAccent</item>
 
-        <item name="titleFontFamily">@font/lato_bold</item>
-        <item name="descriptionFontFamily">@font/pt_mono_75f</item>
+        <!--<item name="titleFontFamily">@font/lato_bold</item>
+        <item name="descriptionFontFamily">@font/pt_mono_75f</item>-->
 
-        <item name="textTitleColor">@color/colorDrawableTint</item>
-        <item name="textDescriptionColor">@color/colorTextDescription</item>
+        <!--<item name="textTitleColor">@color/colorDrawableTint</item>
+        <item name="textDescriptionColor">@color/colorTextDescription</item>-->
+
+        <item name="textTitleColor">?android:attr/textColorPrimary</item>
+        <item name="textDescriptionColor">?android:attr/textColorSecondary</item>
 
         <item name="keepDefaultLineSpacing">true</item>
+    </style>
+
+    <style name="TextAppearanceTitle" parent="TextAppearance.AppCompat.Subhead">
+        <item name="android:fontFamily">@font/google_sans_medium</item>
+    </style>
+
+    <style name="TextAppearanceDescription" parent="TextAppearance.AppCompat">
+        <item name="android:fontFamily">@font/google_sans_regular</item>
     </style>
 
     <style name="SystemSettingsItemStyle">
@@ -57,17 +65,22 @@
         <item name="android:paddingStart">@dimen/item_padding</item> <!-- 24dp for center -->
         <item name="android:paddingEnd">?attr/listPreferredItemPaddingRight</item>
 
-        <item name="titleTextAppearance">@style/TextAppearance.AppCompat.Subhead</item>
+        <!--<item name="titleTextAppearance">@style/TextAppearance.AppCompat.Subhead</item>-->
         <!--<item name="descriptionTextAppearance">@style/TextAppearance.AppCompat.Large</item>-->
 
         <item name="drawablePadding">@dimen/drawable_padding</item> <!-- 24dp for center -->
-        <item name="drawableTintColor">@color/colorDrawableTint</item>
+        <!--<item name="drawableTintColor">@color/colorDrawableTint</item>-->
+        <item name="drawableTintColor">?colorAccent</item>
 
-        <item name="titleFontFamily">@font/value_bold</item>
-        <item name="descriptionFontFamily">@font/lato_regular</item>
+        <item name="titleTextSize">16sp</item>
+        <item name="titleFontFamily">@font/google_sans_medium</item>
+        <item name="descriptionFontFamily">@font/google_sans_regular</item>
 
-        <item name="textTitleColor">@color/colorDrawableTint</item>
-        <item name="textDescriptionColor">@color/colorTextDescription</item>
+       <!-- <item name="textTitleColor">@color/colorDrawableTint</item>
+        <item name="textDescriptionColor">@color/colorTextDescription</item>-->
+
+        <item name="textTitleColor">?android:attr/textColorPrimary</item>
+        <item name="textDescriptionColor">?android:attr/textColorSecondary</item>
 
         <item name="keepDefaultLineSpacing">true</item>
         <!--<item name="TextViewTwoLineTitleTextStyle">italic</item>-->
