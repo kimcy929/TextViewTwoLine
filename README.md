@@ -11,7 +11,7 @@ allprojects {
 }
    
 dependencies {
-   compile 'com.github.kimcy929:TextViewTwoLine:1.0.1'
+   compile 'com.github.kimcy929:TextViewTwoLine:1.0.3'
 }
 ```
 ## Make settings item is simpler
